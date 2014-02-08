@@ -12,5 +12,5 @@ srt-translater
 到字幕所在文件夹，执行以下语句（支持批量）：
 
 ```
-find . -name "*.srt" |xargs groovy ./srt-translater.groovy
+find . -name "*.srt" -print0 | xargs -0 groovy ./srt-translater.groovy
 ```
